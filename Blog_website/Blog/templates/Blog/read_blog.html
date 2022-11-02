@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Read Blog</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Avaialbe Blog:</h1>
+        <ul>
+            {% for msg in msg_list %}
+                <li>{{ msg.Title }},{{ msg.Content }} ,{{ msg.is_published }},{{ msg.publish_date }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+  </body>
+</html>
