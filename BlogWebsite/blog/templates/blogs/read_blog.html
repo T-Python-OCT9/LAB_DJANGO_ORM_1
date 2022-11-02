@@ -1,0 +1,13 @@
+{% extends 'blogs/home.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Blogs:</h1>
+    <ul>
+        {% for blog in blogs %}
+            <li>{{ blog.title }}, {{blog.content}} , {{blog.is_published}} , {{blog.publish_date}}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
