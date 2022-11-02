@@ -1,0 +1,37 @@
+{% extends 'blogs/home.html' %}
+
+{% block content %}
+
+<div class="container" >
+
+    <h1>Add new Blog</h1><br><br>
+    <form action="" method="POST"  class="fa fa-align-center" aria-hidden="true">
+        {% csrf_token %}
+
+        <label>Titile:</label>
+        <input type="text" name = "title" placeholder="Title ..."/><br><br>
+
+        <label>content:</label>
+        <textarea  name = "content" placeholder="content ..."></textarea><br><br>
+
+        <label>is Publish ?</label>
+        
+        <input type="radio" id="True" checked="yes" name="is_published" value="True">
+        <label for="is_published">Yes</label>
+        <input type="radio" id="False" checked="no" name="is_published" value="False">
+        <label for="is_published">No</label><br><br>
+         
+
+        <label>publish date:</label>
+        <input type="datetime-local" name = "publish_date"/> <br><br>
+
+        
+        <input type="submit" value="Add" >
+
+
+    </form>
+
+
+</div> 
+
+{% endblock %}
