@@ -1,0 +1,25 @@
+{% extends 'AppORM/base.html' %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr style="color: lightGray;">
+            <th scope="col">Title</th>
+            <th scope="col">Content</th>
+            <th scope="col">Is Published ? </th>
+            <th scope="col">Publish Date </th>
+        </tr>
+    </thead>
+
+    <tbody class="table-group-divider text-light">
+        {% for blog in blogs %}
+        <tr>
+            <th>{{blog.Title}}</th>
+            <td>{{blog.Content}}</td>
+            <td>{{blog.is_published}}</td>
+            <td>@{{blog.publish_date}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
