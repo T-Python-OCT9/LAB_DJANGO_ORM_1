@@ -6,8 +6,8 @@
 
 
 ### Create model Post , it should have the following attributes :
-- Title : varchar
-- Content : text
-- is_published : boolean
-- publish_date : datetime
+- Title : char field
+- Content : text field
+- is_published : boolean field
+- publish_date : datetime field
 
