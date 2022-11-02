@@ -1,0 +1,16 @@
+{% extends 'blogApp/blog.html' %}
+
+
+{%block read%}
+
+<div class="container">
+    <h1>The blogs :</h1>
+    <ul>
+        {% for blog in blogs %}
+            <li>{{ blog.title }}, {{blog.content}} ,{{ blog.publish_date }} </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+{%endblock%}
