@@ -7,34 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'static/Blog_app/styles.css'%}" rel="stylesheet" >
-    
     <title>{% block title %}Blogs{% endblock %}</title>
 </head>
 <body>
     {% block content %}
     <div class="row gx-4 gx-lg-5 justify-content-center">
-
        {% for blog in blogs %}
         <div class="col-md-10 col-lg-8 col-xl-7">
-            <!-- Post preview-->
             <div class="post-preview">
                     <h2 class="post-title">{{blog.Title}}</h2>
                     <p class="post-subtitle">{{blog.Content}}</p>
                     <p class="post-subtitle">{{blog.is_published}}</p>
                 <p class="post-meta">Posted at {{blog.publish_date}} </p>
             </div>
-            <!-- Divider-->
             <hr class="my-4">
-           
         </div>
         {% endfor%}
     </div>
-    
-
     {% endblock %}
-
-
-
-
 </body>
 </html>
