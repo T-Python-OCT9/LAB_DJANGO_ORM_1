@@ -1,0 +1,17 @@
+<div class="container">
+    <h1> Moath Blogs Add a Blog Pls</h1>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label> title : </label>
+        <input type="text" name ="title" placeholder="title.." />
+        <label> Content : </label>
+        <textarea name = "Content"></textarea> 
+        <label> publish_date : </label>
+        <input type="date" name = "publish_date" />
+        <label>is_published</label>
+        <input type="radio" name="is_published" value="True">
+        <input type="submit" value="submit">
+
+    </form>
+</div>
