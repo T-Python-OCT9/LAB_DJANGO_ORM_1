@@ -1,0 +1,12 @@
+<div class="container">
+
+    <h1> Read the blogs You Posted : </h1>
+
+    <ul>
+
+        {% for POST in blog %}
+
+        {{post.title}}, {{post.content}}, {{post.is_published}} , {{post.publish_date}}</li>
+
+        {% endfor %}
+    </ul>
