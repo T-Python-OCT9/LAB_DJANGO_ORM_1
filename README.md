@@ -1,13 +1,44 @@
-# LAB_DJANGO_ORM_1
+# LAB_PERSONAL_WEBSITE
 
-## Using what you learned , Create a Blog website .
-- Users can read the blog posts.
-- Users can Add a blog post. 
+## Create a Personal Website
 
 
-### Create model Post , it should have the following attributes :
-- Title : char field
-- Content : text field
-- is_published : boolean field
-- publish_date : datetime field
+A personal website is website that represents you , your work , your career , your interests and so on. It could be highly stylish , fun, or simple, serious and so on. You choose how you represent yourself online !
 
+
+
+### Inspirations:
+- https://www.shanekinkennon.com
+- https://www.joshrubietta.com
+- https://www.jencarrington.com
+- https://www.amywutoo.com
+- https://www.ginakirlew.com
+
+
+
+## Resources:
+
+### Free high quality images :
+- https://www.pexels.com/
+- https://unsplash.com
+
+
+
+
+### Free sounds website:
+- https://mixkit.co/
+
+### Free stock videos:
+- https://pixabay.com/videos/
+
+### Free Fonts:
+- https://fonts.google.com
+
+
+### CSS Library:
+- https://getbootstrap.com/
+- https://get.foundation/index.html
+
+### CSS Animation libraries:
+- https://animate.style
+- https://www.minimamente.com/project/magic/
