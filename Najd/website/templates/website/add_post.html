@@ -1,0 +1,32 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Add New Post </h1>
+
+    <form action="" method="POST" class ="fa fa-align-center" aria-hidden=""true>
+
+        {% csrf_token %}
+        <label>Title:</label>
+        <input type="text" name="title" placeholder="Title..." />
+        <label>Content:</label>
+        <textarea name="Content" placeholder="content ...."></textarea>
+        <label>Published:</label>
+        <input type="radio" id="True" checked="yes" name="is_published" value="True">
+        <label for="is_published">Yes</label>
+        <input type="radio" id="False" checked="no" name="is_published" value="False">
+        <label for="is_published">No</label><br><br>
+
+        
+        
+        
+        <label>Choose Date:</label>
+        <input type="date" name="publish_date" />
+
+        <input type="submit" value="Add" />
+    </form>
+
+</div>
+
+{% endblock %}

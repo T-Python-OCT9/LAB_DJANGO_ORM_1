@@ -1,0 +1,14 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Avaialbe Post:</h1>
+    <ul>
+        {% for book in books %}
+            <li>{{ post.title }}, {{ post.publish_date }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
