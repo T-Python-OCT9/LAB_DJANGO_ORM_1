@@ -6,6 +6,7 @@ app_name= "blog"
 urlpatterns = [
 
 
-path("add/", add_blog , name="new_blog") ,
+path("add/",views.add_blog, name="new_blog") ,
+path("Posts/",views.show_post, name="show_post")
 
 ]
