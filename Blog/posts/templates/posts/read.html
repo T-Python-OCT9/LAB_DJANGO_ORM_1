@@ -1,0 +1,11 @@
+{% extends 'posts/base.html' %}
+{% block content %}
+<h1 class="mb-5">Blog Posts</h1>
+{% for post in posts %}
+    <div class="mb-3 border p-3">
+        <div class="mb-2 border-bottom pb-1 fs-2">{{post.title}}</div>
+        <div class="mb-1 pt-1 fs-4">{{post.content}}</div>
+        <div class="mb-1 pt-1 fs-6">Published: {{post.publish_date}}</div>
+    </div>
+{% endfor %}
+{% endblock %}
