@@ -1,0 +1,16 @@
+% extends 'blog/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1>THE POST :</h1>
+    <div>
+      <li> {{Blog.Title}} ,
+           {{Blog.Content}} ,
+           {{Blog.publish_date}}</li>  
+            
+    </div>
+
+</div>
+
+{% endblock %}
