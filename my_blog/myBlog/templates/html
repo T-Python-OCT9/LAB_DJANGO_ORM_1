@@ -1,0 +1,24 @@
+<nav class="sqs-svg-icon--list">
+    <a href="https://www.instagram.com/####" target="_blank" class="sqs-svg-icon--wrapper instagram-unauth" aria-label="Instagram">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#instagram-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#instagram-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://www.youtube.com/ginakirlew" target="_blank" class="sqs-svg-icon--wrapper youtube-unauth" aria-label="YouTube">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#youtube-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#youtube-unauth-mask"></use>
+        </svg>
+      </div>
+    </a><a href="https://www.facebook.com/ginakirlew" target="_blank" class="sqs-svg-icon--wrapper facebook-unauth" aria-label="Facebook">
+      <div>
+        <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+          <use class="sqs-use--icon" xlink:href="#facebook-unauth-icon"></use>
+          <use class="sqs-use--mask" xlink:href="#facebook-unauth-mask"></use>
+        </svg>
+      </div>
+    </a>
+  </nav>
