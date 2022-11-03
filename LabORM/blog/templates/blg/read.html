@@ -1,0 +1,12 @@
+<div class="container">
+
+    <h1> read Posts : </h1>
+
+    <ul>
+
+        {% for POST in blog %}<!-- <<<name the app don't forget -->
+
+        {{post.title}}, {{post.content}}, {{post.is_published}} , {{post.publish_date}}</li>
+
+        {% endfor %}
+    </ul>
