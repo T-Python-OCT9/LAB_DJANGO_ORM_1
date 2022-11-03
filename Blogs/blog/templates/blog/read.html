@@ -1,0 +1,14 @@
+{% extends 'blog/post.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1> blog posts:</h1>
+    <ul>
+        {% for i in ALL_BLOGS %}
+            <li>{{ i.Title }}, {{ i.Content }}, {{ i.is_published}}, {{ i.publish_date }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
