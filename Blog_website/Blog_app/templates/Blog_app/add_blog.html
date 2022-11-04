@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'static/Blog_app/styles.css'%}" rel="stylesheet" >
+    
     <title>{% block title %}add blog{% endblock %}</title>
 </head>
 <body >
@@ -16,6 +17,7 @@
           <div class="col-lg-7 mx-auto">
             <div class="card mt-2 mx-auto p-4 bg-light">
                 <div class="card-body bg-light">
+           
                 <div class = "container">
                  <form id="contact-form" role="form" action="" method="POST">
                     {%csrf_token%}
@@ -35,7 +37,14 @@
                                 <textarea name="Content" class="form-control" placeholder="Write your Content here." rows="4"  ></textarea>
                                 </div>
                          </div></div>
-                         
+                         <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="publish_date">Published date : </label>
+                                    <input  type="datetime-local" name="publish_date" class="form-date-input" >
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-check">
@@ -50,13 +59,17 @@
                     </div>
               
                     </div>
+    
+    
             </div>
              </form>
             </div>
                 </div>
     
+    
         </div>
        
+    
         </div>
      
     
