@@ -1,0 +1,37 @@
+
+{% extends 'blogwebsite/base.html' %}
+
+{% block title %} Our Posts {% endblock %}
+
+
+
+
+{% block content %}
+
+<h1>Posts List</h1>
+
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">title</th>
+            <th scope="col">publish date</th>
+            <th scope="col">is published</th>
+            <th scope="col">Edit</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for post in posts %}
+            <tr>
+                <th scope="row"><a href="{% url 'Blogs:blog_list' post.id %}">{{ post.title }}</a></th>
+                <td>{{ post.publish_date }}</td>
+                <td>{{ post.is_published }}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}
