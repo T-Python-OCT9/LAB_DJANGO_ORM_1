@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blog</title>
+    </head>
+<body>   
+<div class="container">
+    <h1>Add New Blog </h1>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label>Title:</label>
+        <input type="text" name="title" placeholder="Title...">
+        <label>Content:</label>
+        <textarea name="Content"></textarea>
+        <div class="mb-3">
+            <label class="form-label">Is Published ?</label>
+            <select class="form-select" name="is_published">
+                <option value="True">Yes</option>
+                <option value="False">No</option>
+            </select>
+        </div>
+        <label>Choose Date:</label>
+        <input type="date" name="publish_date">
+        
+
+        <input type="submit" value="Create"/>
+    </form>
+
+</div>
+</body> 
+</html>

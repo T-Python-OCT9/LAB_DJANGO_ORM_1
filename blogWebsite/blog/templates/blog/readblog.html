@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+<div class="container">
+    <h1>Avaialbe Blog:</h1>
+    <ul>
+        {% for b in blog %}
+            <li>{{ blog.Title }}, {{ blog.Content }},{{ blog.is_published }}, {{ blog.publish_date }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
